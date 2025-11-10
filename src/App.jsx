@@ -9,3 +9,11 @@ export default function Title() {
     </div>
   );
 }
+
+function Description() {
+  return (
+    <div>
+      <p> This is my second component</p>
+    </div>
+  );
+}
