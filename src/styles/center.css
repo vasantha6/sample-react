@@ -1,0 +1,35 @@
+/* Dedicated center stylesheet to ensure app content is centered in the viewport */
+:root {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Center the direct app container both vertically and horizontally */
+.app-center-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* Make panels responsive on small screens */
+.panels {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .panel {
+    width: 100%;
+    max-width: 420px;
+  }
+}

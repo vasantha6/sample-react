@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -39,4 +43,61 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Panels layout */
+.panels {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.panel {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  width: 320px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+.panel-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.panel-subtitle {
+  margin: 0 0 0.75rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.panel-body {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Students layout */
+.students-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.student-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  width: 220px;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.student-card h4 {
+  margin: 0 0 0.25rem 0;
+}
+.student-card p {
+  margin: 0.25rem 0;
 }
